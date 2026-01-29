@@ -1,0 +1,14 @@
+name: mds-grag
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - networkx
+  - ipykernel
+  - jupyter
+  - pip
+  - pip:
+    - ollama
+    - pyvis
