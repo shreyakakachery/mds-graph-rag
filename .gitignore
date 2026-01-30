@@ -21,3 +21,6 @@ data/raw/lectures/
 .DS_Store
 .vscode/
 .idea/
+
+# Local environment variables
+.env
