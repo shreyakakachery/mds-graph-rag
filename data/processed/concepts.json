@@ -1,0 +1,32 @@
+{
+  "DSCI_511": [
+    "flow control",
+    "iteration",
+    "functions",
+    "lists",
+    "python",
+    "data manipulation"
+  ],
+  "DSCI_521": [
+    "unix shell",
+    "version control",
+    "git/github",
+    "virtual environments",
+    "data scientific software stack"
+  ],
+  "DSCI_523": [
+    "data wrangling",
+    "pandas",
+    "tidyverse",
+    "filtering",
+    "sorting",
+    "cleaning"
+  ],
+  "DSCI_551": [
+    "probability theory",
+    "conditional distributions",
+    "joint distributions",
+    "random variables",
+    "distributions"
+  ]
+}
