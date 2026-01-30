@@ -1,4 +1,5 @@
 import re
+import os
 
 def normalize_concept(concept):
     """
@@ -27,3 +28,25 @@ def normalize_concept(concept):
     clean_concept = " ".join(clean_concept.split())
     
     return clean_concept
+
+
+def load_prompt(filename):
+    """
+    Reads the content of a prompt file from the prompts directory.
+
+    Args:
+        filename (str): The name of the file to load (e.g., 'concept_extraction.md').
+
+    Returns:
+        str: The full text content of the prompt file.
+
+    Example:
+        >>> # Assuming 'test.md' contains 'Hello World'
+        >>> load_prompt('test.md')
+        'Hello World'
+    """
+    # Build the path relative to the project root
+    path = os.path.join('prompts', filename)
+    
+    with open(path, 'r', encoding='utf-8') as f:
+        return f.read()
