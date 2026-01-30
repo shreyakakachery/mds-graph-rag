@@ -7,13 +7,13 @@ This project builds upon my previous [MDS Knowledge Map](https://github.com/shre
 
 ## Project Roadmap
 
-### Phase 1: Setup & Extraction (current)
+### Phase 1: Setup & Extraction
 
 - [x] Conda environment and Git structure initialized.
 - [x] Raw MDS block 1 course metadata compiled in `data/raw/courses.json`.
 - [x] Structured system prompts defined in `prompts/`.
 - [x] Modular utility functions for normalization and I/O created.
-- [ ] Run LLM pipeline to generate `concepts.json`.
+- [x] Run LLM pipeline to generate `data/processed/concepts.json`.
 
 ### Phase 2: GraphRAG & Visualization
 
