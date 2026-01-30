@@ -1,5 +1,6 @@
 import re
 import os
+import json
 
 def normalize_concept(concept):
     """
@@ -50,3 +51,27 @@ def load_prompt(filename):
     
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
+
+
+def save_json(data, filepath):
+    """
+    Saves a Python dictionary to a JSON file with pretty-printing.
+
+    This function ensures the destination directory exists before writing.
+    It uses an indent of 2 for a balance between readability and file size.
+
+    Args:
+        data (dict): The dictionary or list to be saved.
+        filepath (str): The destination path (e.g., 'data/processed/extractions.json').
+
+    Example:
+        >>> my_data = {"DSCI_511": ["Python", "Programming"]}
+        >>> save_json(my_data, 'data/processed/test.json')
+        # Created directory 'data/processed/' and saved test.json
+    """
+    directory = os.path.dirname(filepath)
+    if directory:
+        os.makedirs(directory, exist_ok=True)
+
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
