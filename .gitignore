@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Jupyter / Quarto
+.ipynb_checkpoints/
+.quarto/
+_freeze/
+
+# Data (Phase 3 protection)
+data/raw/syllabi/
+data/raw/lectures/
+# Keep raw metadata and processed output
+!data/raw/courses.json
+!data/processed/extractions.json
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
