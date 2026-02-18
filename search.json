@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "prompts/concept_extraction.html",
-    "href": "prompts/concept_extraction.html",
-    "title": "Role",
+    "objectID": "CHANGELOG.html",
+    "href": "CHANGELOG.html",
+    "title": "Changelog",
     "section": "",
-    "text": "Role\nYou are a Curriculum Mapping Assistant specializing in Data Science education. Your goal is to identify core technical competencies within course descriptions.\n\n\nTask\nExtract all significant technical concepts, tools, methodologies, and programming languages mentioned or strongly implied in the provided Course Description.\n\n\nConstraints\n\nOutput MUST be a valid JSON list of strings (e.g., [“Python”, “Linear Regression”]).\nDO NOT limit the count; extract as many as are relevant, but avoid generic words like “assignment,” “student,” or “learning.”\nUse “Title Case” for all concepts.\nNO conversational filler. NO markdown code blocks (```json). Just the raw list.\nIf a concept is a specific tool (e.g., “Pandas”, “Docker”), prioritize it.\n\n\nExample Output\n[“Data Wrangling”, “Tidyverse”, “Functional Programming”, “API Integration”, “Python”]"
+    "text": "All notable changes to the MDS Knowledge Map v2 project will be documented in this file.\n\n\n\n\n\nCourse descriptions for all 24 MDS courses.\nCreated scripts/build_graph.py using NetworkX and Pyvis to model course relationships.\nInitialized Quarto site with _quarto.yml, index.qmd, and custom styles.css.\nCreated .github/workflows/publish.yml to automate the Python graph build and Quarto deployment to GitHub Pages.\nFilled the Tech Stack and Project Structure sections in README.md\n\n\n\n\n\nExpanded data/processed/concepts.json from the Block 1 prototype to include all 24 MDS courses.\nModified extract_concepts.py to use a maximalist prompt for higher density concept extraction.\nModified the Project Roadmap section in README.md to include a TODO list.\n\n\n\n\n\nResolved MissingEnvVarsError by renaming .env files and updating .gitignore to prevent environment clashes.\nAdded lib/ and generated HTML files to .gitignore to maintain a clean repository state.\n\n\n\n\n\nDeprecated data/raw/courses.json in favor of more detailed course description schemas.\n\n\n\n\n\n\n\n\nInitial project folder structure.\nBasic concept extraction script using local Ollama (Llama 3).\nBlock 1 course descriptions in data/raw/courses.json.\nConceptual project roadmap and placeholder sections in README."
+  },
+  {
+    "objectID": "CHANGELOG.html#section",
+    "href": "CHANGELOG.html#section",
+    "title": "Changelog",
+    "section": "",
+    "text": "Course descriptions for all 24 MDS courses.\nCreated scripts/build_graph.py using NetworkX and Pyvis to model course relationships.\nInitialized Quarto site with _quarto.yml, index.qmd, and custom styles.css.\nCreated .github/workflows/publish.yml to automate the Python graph build and Quarto deployment to GitHub Pages.\nFilled the Tech Stack and Project Structure sections in README.md\n\n\n\n\n\nExpanded data/processed/concepts.json from the Block 1 prototype to include all 24 MDS courses.\nModified extract_concepts.py to use a maximalist prompt for higher density concept extraction.\nModified the Project Roadmap section in README.md to include a TODO list.\n\n\n\n\n\nResolved MissingEnvVarsError by renaming .env files and updating .gitignore to prevent environment clashes.\nAdded lib/ and generated HTML files to .gitignore to maintain a clean repository state.\n\n\n\n\n\nDeprecated data/raw/courses.json in favor of more detailed course description schemas."
+  },
+  {
+    "objectID": "CHANGELOG.html#section-1",
+    "href": "CHANGELOG.html#section-1",
+    "title": "Changelog",
+    "section": "",
+    "text": "Initial project folder structure.\nBasic concept extraction script using local Ollama (Llama 3).\nBlock 1 course descriptions in data/raw/courses.json.\nConceptual project roadmap and placeholder sections in README."
   },
   {
     "objectID": "index.html",
@@ -12,5 +26,12 @@
     "title": "MDS Knowledge Graph v2",
     "section": "",
     "text": "Explore the connections between courses in the UBC MDS program."
+  },
+  {
+    "objectID": "prompts/concept_extraction.html",
+    "href": "prompts/concept_extraction.html",
+    "title": "Role",
+    "section": "",
+    "text": "Role\nYou are a Curriculum Mapping Assistant specializing in Data Science education. Your goal is to identify core technical competencies within course descriptions.\n\n\nTask\nExtract all significant technical concepts, tools, methodologies, and programming languages mentioned or strongly implied in the provided Course Description.\n\n\nConstraints\n\nOutput MUST be a valid JSON list of strings (e.g., [“Python”, “Linear Regression”]).\nDO NOT limit the count; extract as many as are relevant, but avoid generic words like “assignment,” “student,” or “learning.”\nUse “Title Case” for all concepts.\nNO conversational filler. NO markdown code blocks (```json). Just the raw list.\nIf a concept is a specific tool (e.g., “Pandas”, “Docker”), prioritize it.\n\n\nExample Output\n[“Data Wrangling”, “Tidyverse”, “Functional Programming”, “API Integration”, “Python”]"
   }
 ]
