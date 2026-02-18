@@ -1,0 +1,10 @@
+---
+title: "MDS Knowledge Graph v2"
+format: html
+---
+
+Explore the connections between courses in the UBC MDS program.
+
+:::{.column-screen-inset}
+<iframe src="graph_embed.html"></iframe>
+:::

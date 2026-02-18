@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs 
+
+website:
+  title: "MDS Knowledge Graph v2"
+  description: "Mapping the UBC MDS Curriculum"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "GitHub"
+        href: https://github.com/shreyakakachery/mds-graph-rag
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    self-contained-math: true 
+
+resources:
+  - graph_embed.html
