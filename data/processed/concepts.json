@@ -2,31 +2,264 @@
   "DSCI_511": [
     "flow control",
     "iteration",
+    "lists (arrays)",
     "functions",
-    "lists",
+    "file i/o",
+    "classes",
+    "objects",
+    "methods",
+    "libraries",
     "python",
-    "data manipulation"
+    "r",
+    "pseudo-code",
+    "data manipulation",
+    "program design",
+    "data exploration",
+    "analysis",
+    "pre-existing libraries"
   ],
   "DSCI_521": [
     "unix shell",
     "version control",
-    "git/github",
+    "git",
+    "github",
     "virtual environments",
-    "data scientific software stack"
+    "integrated development environments",
+    "ides",
+    "software stack",
+    "statistical software",
+    "programming software",
+    "literate programming"
   ],
   "DSCI_523": [
-    "data wrangling",
-    "pandas",
     "tidyverse",
-    "filtering",
-    "sorting",
-    "cleaning"
+    "pandas",
+    "data wrangling",
+    "program design",
+    "functional programming",
+    "api integration",
+    "r",
+    "statistical analysis"
   ],
   "DSCI_551": [
-    "probability theory",
+    "descriptive statistics",
+    "random variables",
+    "distributions",
     "conditional distributions",
     "joint distributions",
+    "marginal distributions",
+    "categorical variables",
+    "uncertainty",
+    "missing data"
+  ],
+  "DSCI_512": [
+    "data structures",
+    "linked lists",
+    "queues",
+    "stacks",
+    "trees",
+    "graphs",
+    "hash tables",
+    "searching",
+    "sorting",
+    "recursion",
+    "big-o notation",
+    "efficiency",
+    "scalability"
+  ],
+  "DSCI_531": [
+    "data visualization",
+    "statistical software",
+    "programming software",
+    "exploratory data analysis",
+    "descriptive plots",
+    "r",
+    "python"
+  ],
+  "DSCI_552": [
+    "statistics",
     "random variables",
-    "distributions"
+    "parameters",
+    "observed data",
+    "estimation",
+    "point estimation",
+    "interval estimation",
+    "two-group comparisons",
+    "frequentist version",
+    "simulation-based approaches",
+    "probabilistic foundations of inference",
+    "large sample results",
+    "frequentist paradigm"
+  ],
+  "DSCI_571": [
+    "decision trees",
+    "k-th nearest neighbour classifiers",
+    "naive bayes classifiers",
+    "logistic regression",
+    "supervised machine learning",
+    "generalization error",
+    "overfitting",
+    "k-nn"
+  ],
+  "DSCI_513": [
+    "sql",
+    "embedded sql",
+    "xml",
+    "xquery",
+    "relational schemas",
+    "data relationships"
+  ],
+  "DSCI_522": [
+    "scripting",
+    "dynamic reporting",
+    "reproducibility",
+    "version control",
+    "automated workflows",
+    "api integration",
+    "containerization",
+    "python"
+  ],
+  "DSCI_561": [
+    "linear regression",
+    "matrix formulation"
+  ],
+  "DSCI_573": [
+    "data wrangling",
+    "shrinkage",
+    "feature selection",
+    "akaike information criterion",
+    "bayesian information criterion",
+    "k-fold cross validation",
+    "bootstrapping",
+    "receiver operating characteristic curve",
+    "elastic nets",
+    "regularization",
+    "cross-validation",
+    "roc curves",
+    "feature engineering"
+  ],
+  "DSCI_524": [
+    "software life cycle",
+    "unit testing",
+    "continuous integration",
+    "packaging",
+    "abstraction",
+    "collaborative software development"
+  ],
+  "DSCI_542": [
+    "data wrangling",
+    "presentation skills",
+    "citations",
+    "references",
+    "peer-review"
+  ],
+  "DSCI_562": [
+    "data-driven parameter selection",
+    "non-parametric regression",
+    "smoothing",
+    "mixed effects",
+    "generalized linear models",
+    "robust regression",
+    "tolerant regression",
+    "dealing with missing data"
+  ],
+  "DSCI_572": [
+    "gradient descent",
+    "neural networks",
+    "deep learning",
+    "ensemble classifiers",
+    "support vector machines",
+    "random forests",
+    "graphical models",
+    "numerical optimization"
+  ],
+  "DSCI_532": [
+    "data visualization",
+    "design choices",
+    "dynamic change",
+    "multiple views",
+    "data reduction",
+    "complexity",
+    "interactive figures"
+  ],
+  "DSCI_553": [
+    "bayesian reasoning",
+    "prior-to-posterior paradigm",
+    "hypothesis testing",
+    "false discovery rate",
+    "two-group comparisons",
+    "data science"
+  ],
+  "DSCI_563": [
+    "unsupervised learning",
+    "k-means/medoids",
+    "model-based clustering",
+    "expectation-maximization algorithm",
+    "hierarchical clustering",
+    "dimension reduction",
+    "matrix decomposition",
+    "heatmaps",
+    "contour plots",
+    "dendograms",
+    "em algorithm"
+  ],
+  "DSCI_574": [
+    "state space",
+    "change point detection",
+    "hidden markov models",
+    "gaussian processes",
+    "model fitting",
+    "prediction",
+    "arima",
+    "temporal association",
+    "spatial association"
+  ],
+  "DSCI_525": [
+    "networks",
+    "api integration",
+    "scraping",
+    "cloud computing",
+    "web services",
+    "parallel computing",
+    "data collection",
+    "computation",
+    "publishing"
+  ],
+  "DSCI_541": [
+    "data wrangling",
+    "encryption",
+    "anonymization",
+    "privacy-preserving techniques",
+    "case studies"
+  ],
+  "DSCI_554": [
+    "randomization",
+    "a/b testing",
+    "blocked designs",
+    "orthogonality",
+    "causality",
+    "batch effects",
+    "confounding",
+    "simulations",
+    "statistical evidence",
+    "multiple testing problem",
+    "python"
+  ],
+  "DSCI_575": [
+    "neural networks",
+    "backpropagation",
+    "deep learning",
+    "overfitting",
+    "underfitting",
+    "active data acquisition",
+    "hyperparameter optimization",
+    "machine learning",
+    "natural language processing",
+    "nlp",
+    "bag of words",
+    "recommender systems",
+    "topic models",
+    "markov chains",
+    "recurrent neural networks"
   ]
 }

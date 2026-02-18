@@ -7,17 +7,17 @@ from utils import normalize_concept, load_prompt, save_json
 
 load_dotenv()
 MODEL = os.getenv("OLLAMA_MODEL", "llama3")
-RAW_DATA = "data/raw/courses.json"
+RAW_DATA = "data/raw/course_descriptions.json"
 OUTPUT_DATA = "data/processed/concepts.json"
 
 def get_llm_extraction(system_prompt, course_description):
     """
     Sends the course description to Ollama and returns the extracted JSON list.
     """
-    # Add data to system instructions
     full_prompt = f"{system_prompt}\n\nCourse Description:\n{course_description}"
     
-    # Run ollama command
+    print(f"   ...waiting for Ollama to respond...")
+
     process = subprocess.run(
         ['ollama', 'run', MODEL, full_prompt],
         capture_output=True, 
@@ -32,7 +32,6 @@ def get_llm_extraction(system_prompt, course_description):
     return process.stdout.strip()
 
 def main():
-    # Load instructions and data
     system_prompt = load_prompt("concept_extraction.md")
     
     with open(RAW_DATA, 'r') as f:
@@ -42,7 +41,6 @@ def main():
 
     print(f"Starting extraction with {MODEL}...")
 
-    # Iterate through courses
     for course_id, details in courses.items():
         name = details.get('name', 'Unknown Course')
         description = details.get('description', '')
